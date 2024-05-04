@@ -7,26 +7,26 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         {/* 头部文案 */}
         <header className="text-3xl font-bold text-center text-gray-800 my-8">
-          大营销平台 - 抽奖展示
+          营销平台 - 抽奖
         </header>
 
         {/* 中间的两个div元素 */}
         <div className="flex flex-col md:flex-row gap-4 mb-8">
           <div className="w-full md:w-1/2 p-6 bg-white shadow-lg rounded-lg">
-            <p className="text-gray-700">
+            <div className="text-gray-700">
               <LuckyWheelPage/>
-            </p>
+            </div>
           </div>
           <div className="w-full md:w-1/2 p-6 bg-white shadow-lg rounded-lg">
-            <p className="text-gray-700">
+            <div className="text-gray-700">
               <LuckyGridPage/>
-            </p>
+            </div>
           </div>
         </div>
 
         {/* 底部文案 */}
         <footer className="text-gray-600 text-center my-8">
-          智能平台 - 促销部分 dreamer-carry-on.top
+          @Author:HeYang   @Github:https://github.com/flatLying
         </footer>
       </div>
   );

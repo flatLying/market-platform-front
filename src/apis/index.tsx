@@ -1,11 +1,11 @@
-const apiHostUrl = process.env.API_HOST_URL ? process.env.API_HOST_URL : "http://127.0.0.1:4523/m1/3838818-3472149-default";
+const apiHostUrl = process.env.API_HOST_URL ? process.env.API_HOST_URL : "http://localhost:8080";
 
 /**
  * 查询奖品列表
  */
-export const queryRaffleAwardList = (strategyId: number) => {
+export const queryRaffleAwardList = () => {
     try {
-        return fetch(`${apiHostUrl}/api/v1/raffle/query_raffle_award_list?strategyId=${strategyId}`, {
+        return fetch(`${apiHostUrl}/api/v1/raffle/queryAwardList`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -20,9 +20,9 @@ export const queryRaffleAwardList = (strategyId: number) => {
     }
 }
 
-export const randomRaffle = (strategyId: number) => {
+export const randomRaffle = () => {
     try {
-        return fetch(`${apiHostUrl}/api/v1/raffle/random_raffle?strategyId=${strategyId}`,{
+        return fetch(`${apiHostUrl}/api/v1/raffle/randomRaffle`,{
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
